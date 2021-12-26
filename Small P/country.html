@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript - Get selected value from dropdown list</title>
+	</head>
+	<style type="text/css">
+		body {
+		  background-color: lightblue;
+		}
+
+		h1 {
+		  color: blueviolet;
+		  text-align: center;
+		}
+
+		p {
+		  font-family: verdana;
+		  font-size: 20px;
+		  border: 1px solid black;
+          display: table;
+		}
+
+	</style>
+
+	<body>
+
+		<h1>Country Data</h1>
+
+		<p id="result">United State</p>
+		
+		Country Name
+		<select id="country">
+			<option value="None">-- Select --</option>
+			<option value="ID001">China</option>
+			<option value="ID002" selected>United State</option>
+			<option value="ID003">Malaysia</option>
+			<option value="ID004">India</option>
+			<option value="ID005">Japan</option>
+			<option value="ID006">Australia</option>
+		</select>
+
+
+		<script>
+
+			function GetSelectedValue()
+{
+				var e = document.getElementById("country");
+				var result = e.options[e.selectedIndex].value;
+				
+				document.getElementById("result").innerHTML = result;
+			}
+
+			function GetSelectedText(){
+				var e = document.getElementById("country");
+				var result = e.options[e.selectedIndex].text;
+				
+				document.getElementById("result").innerHTML = result;
+			}
+function getcapital()
+{
+var e = document.getElementById("country");
+var result = e.options[e.selectedIndex].value;
+
+  // e.style.fontSize = "25px"; 
+  // e.style.color = "red"; 
+switch(result) 
+{
+  case "ID001":
+    document.getElementById("result").innerHTML = "BEIJING";
+    break;
+  case "ID002":
+document.getElementById("result").innerHTML = "WASHINGTON DC";
+    
+    break;
+  case "ID003":
+document.getElementById("result").innerHTML = "KUALA LUMPUR";   
+    break;
+case "ID004":
+   document.getElementById("result").innerHTML = "NEW DELHI";
+    break;
+case "ID005":
+   document.getElementById("result").innerHTML = "TOKYO";
+    break;
+case "ID006":
+   document.getElementById("result").innerHTML = "CANBERRA";
+    break;
+
+  default:
+    document.write("I have never heard of that one..");
+    break;
+}
+		
+}
+</script>
+
+		<br/>
+		<br/>
+		<button type="button" onclick="GetSelectedValue()">Get Selected Value</button>
+
+		<button type="button" onclick="GetSelectedText()">Get Selected Text</button>
+<button type="button" onclick="getcapital()">Get Capital</button>
+	</body>
+
+</html>

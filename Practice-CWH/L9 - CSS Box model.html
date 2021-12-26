@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            margin: auto;
+        }
+    
+        .container{
+            
+            background-color: bisque;
+            border: 2px solid brown;
+            
+            padding: 34px 34px;
+            /* margin: auto 14px;  */
+            /* padding: 25px 100px;
+            margin: 18px 538px */
+            /* padding: 23px;
+            margin: 34px; */
+            border-radius: 23px;
+            width: 544px;
+        }
+        nav{
+            text-align: center;
+            font-size: 40px;
+        }
+        body{
+            background-image: url('paper.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">HOME</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+    </nav>
+    <div class="container">
+        <h3>This is header one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium amet velit doloribus explicabo natus perspiciatis vitae, sequi modi illum necessitatibus.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is header two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium amet velit doloribus explicabo natus perspiciatis vitae, sequi modi illum necessitatibus.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is header three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium amet velit doloribus explicabo natus perspiciatis vitae, sequi modi illum necessitatibus.</p>
+    </div>
+</body>
+</html>

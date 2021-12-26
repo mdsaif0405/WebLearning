@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>button visited</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+    body {
+background-color: white;
+}
+
+.button {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  border: 10px dashed white;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 0;
+  cursor:pointer;
+  border-radius: 8px;
+  height:200px;
+  width:400px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.visited{
+  background-image:none;
+  background-color: red;
+  font-size: 35px;
+  border: 10px dashed black;
+  color: black;
+}
+
+.button:hover{
+  background-image:none;
+  background-color: white;
+  font-size: 35px;
+  border: 10px dashed black;
+  color: black;
+}
+
+a:visited {
+  color: purple;
+}
+  </style>
+</head>
+<body>
+<input type="button" name="button" value="link" onclick="">
+<button id="button1" class="button" type="button" onclick="onClick(this)">Button1</button>
+<button id="button2" class="button" type="button" onclick="onClick(this)">Button2</button>
+<button id="button3" class="button" type="button" onclick="onClick(this)">Button3</button>
+<br/><a href="#">Test &lt;a&gt; visited</a>
+
+<script type="text/javascript">
+  var clicks = 0;
+function onClick(event) {
+    event.className = "button visited";
+    if (clicks >= 2) {
+     alert("WRONG! YOU LOSE! TRY AGAIN!");
+     // window.location.href = 'index.html';
+    }
+     clicks += 1;
+     // document.getElementById("clicks").innerHTML = clicks;
+};
+</script>
+
+</body>
+</html>

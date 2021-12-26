@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        form {
+            align-items: center;
+        }
+    </style>
+</head>
+<style></style>
+
+<body>
+
+    <span style="border: 1px solid red; font-size: 40px;">This is Form creating in HTML</span>
+    <hr>
+    <form style="border: 1px solid ;" action="backend.php">
+
+        <!-- label -->
+
+        <label for="name">Name</label>
+
+        <!-- Name -->
+
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+
+        <!-- ID -->
+
+        <div>
+            ID: <input type="text" name="myId">
+        </div>
+
+        <!-- email -->
+        <div>
+            Email: <input type="email" name="myEmails">
+        </div>
+
+        <!-- date -->
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+
+        <!-- gender -->
+        <div>
+            Gender:
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other
+        </div>
+
+        <!-- Age -->
+        <div>
+            Age: <input type="number" name="myAge">
+        </div>
+
+        <!-- select tag -->
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="hondacity">Honda City</option>
+                <option value="swift">Swift</option>
+                <option value="zen">Zen</option>
+                <option value="SUV" selected>Audi SUV</option>
+                <option value="nano">Nano</option>
+            </select>
+        </div>
+
+        <!-- about urself -->
+        <div>
+            Write about yourself <br>
+            <textarea placeholder="write something" name="mytext" cols="30" rows="5"></textarea>
+        </div>
+
+        <!-- mail updates -->
+        <div>
+            <input type="checkbox" name="mail_updates" id="check" checked>
+            <label for="check">check for mail updates</label>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+
+        <!-- reset -->
+        <div>
+            <input type="reset" value="Reset now">
+        </div>
+    </form>
+
+</body>
+
+</html>

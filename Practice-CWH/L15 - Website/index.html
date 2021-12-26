@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Reset */
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/hicupinfire.jpg');
+            /* background-repeat: no-repeat; */
+            background-size: 100%;
+            background-position-y: 50%;
+            color:black;
+
+        }
+        .left{
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            border: 2px solid black;
+            font-weight: 700;
+            font-size: 110%;
+        }
+        .left img{
+            width: 100px;
+            filter: invert(100%);
+        }
+        .left:hover, .left img:hover{
+            filter: invert(0%);
+            color: aliceblue;
+        }
+        .left div{
+            text-align: center;
+            font-family: monospace;
+        }
+        .mid{
+            display: block;
+            width:33% ;
+            margin: 20px auto;
+            /* border: 2px solid wheat; */
+
+        }
+        .mid a{
+            /* font-family: 'Playfair Display', serif; */
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 30px;
+            display: inline-block;
+            /* border: 2px solid white; */
+        }
+        .navbar{
+            display: inline-block;
+            width: 115%;
+            margin: 15px auto;
+            margin-left: -36px;
+        }
+        .navbar li{
+            display: inline-block;
+
+        }
+        .navbar a{
+            text-decoration: none;
+            color: black;
+            padding: 34px 20px;
+            font-size: 151%;
+            font-family: fantasy;
+
+        }
+        .navbar a:active, .navbar a:hover{
+
+            color: black;
+            text-decoration: underline;
+
+        }
+        .btn{
+            margin: 0px 5px;
+            padding: 6px 9px;
+            background-color: rgba(255, 0, 0, 0.651);
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/Power.png" alt="">
+            <div>Saif Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Search</button>
+            <button class="btn">Sign In</button>
+        </div>
+    </header>
+</body>
+</html>

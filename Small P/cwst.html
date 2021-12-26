@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+function countWords(str)
+{
+   var count = 0;
+   words = str.split(" "); 
+ for (i=0 ; i < words.length ; i++)
+{
+       // inner loop -- do the count
+       if (words[i] != "")
+          count += 1; 
+    }
+var cst=str.split(".").length-1;
+   document.theForm.results.value =    "There are " +
+      count + "  words ,     " +  str.length + " characters in the text string you entered!" + cst +" sentences";
+}
+ 
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM name="theForm">
+Enter a text string:<br>
+<TEXTAREA name=inStr rows=5 cols=90>
+</TEXTAREA><br>
+<INPUT type=button name="Button_1" value="Count Words" onClick="countWords(document.theForm.inStr.value)";>
+<INPUT type=button name="Button_2" value="Clear data" onClick='document.theForm.inStr.value=""';>
+<br>Results<br>
+<TEXTAREA name=results rows=5 cols=90>
+</TEXTAREA><br>
+<INPUT type=button name="Button_3" value="Clear Results" onClick='document.theForm.results.value=""';>
+</FORM>  
+</BODY>
+</HTML>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border and background</title>
+    <style>
+        #header{
+            border: 1px solid;
+            background-color: darkgray;
+        }
+        #firstPara{
+            background-color: bisque;
+            height: 50px;
+            width: 200px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: brown;
+            border-radius: 10px;
+            padding-left: 5px;
+            
+        }
+        #secondPara{
+            background-color: antiquewhite;
+            height: 50px;
+            width: 200px;
+            border: 1px solid rgb(219, 169, 108);
+            border-left: 5px solid brown;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-left: 5px;
+            
+        }
+        #thirdPara{
+            background-color: bisque;
+            height: 50px;
+            width: 200px;
+            border: 2px solid brown;
+            background-image: url('paper.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h3 id="header">header one</h3>
+    <p id="firstPara"> this is my paragraph one.</p>
+    <h3 id="header">header two</h3>
+    <p id="secondPara">this is my paragraph two.</p>
+    <h3 id="header">header three</h3>
+    <p id="thirdPara">this is my paragraph three.</p>
+
+</body>
+</html>
